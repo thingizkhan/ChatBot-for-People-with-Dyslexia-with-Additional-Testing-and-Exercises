@@ -1,0 +1,25 @@
+# Ignore build files
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Ignore IntelliJ IDEA files
+*.iml
+.gradle
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+
+# Ignore Android Studio files
+/.idea/
+/build/
+/captures
+.gradle/
+/local.properties
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list  xmlns:andoid="http://schemas.android.com/apk/res/android" >
+    <item andoid:top="-3dp" andoid:bottom="-1dp" andoid:right="-3dp" andoid:left="-3dp">
+        <shape andoid:shape="rectangle">
+            <stroke andoid:width="2dp" andoid:color="#703d38"/>
+        </shape>
+    </item>
+</layer-list>

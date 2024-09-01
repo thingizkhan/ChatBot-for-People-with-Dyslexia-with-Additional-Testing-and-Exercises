@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeebd"
+    tools:context=".ChatBotActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/journeytxt"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:fontFamily="@font/od_bold"
+                android:text="Journey"
+                android:textColor="#703d38"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/chatbotimg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/chatbot" />
+
+            <TextView
+                android:id="@+id/writingtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/od_bold"
+                android:text="  Chat Bot"
+                android:textColor="#703d38"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+                <LinearLayout
+                    android:id="@+id/questionsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/responseView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#703d38"
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:fontFamily="@font/od_regular"
+                android:hint="@string/send_message_hint"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="#703d38"
+                android:textColorHint="#703d38"
+                android:textSize="18dp" />
+
+
+            <ImageButton
+                android:id="@+id/send"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="340dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/send"
+                android:contentDescription="Send Message"
+                android:padding="8dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

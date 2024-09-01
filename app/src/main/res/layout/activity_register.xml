@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeebd"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/journeytxt"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/od_bold"
+                android:text="journey"
+                android:textColor="#703d38"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/camelimg"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/camel" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/nameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:fontFamily="@font/od_regular"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="#703d38"
+                android:textColorHint="#703d38"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/dateTxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/date_bg"
+                android:ems="10"
+                android:fontFamily="@font/od_regular"
+                android:hint="Age"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="#703d38"
+                android:textColorHint="#703d38"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/mailTxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:fontFamily="@font/od_regular"
+                android:hint="Email Address"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="#703d38"
+                android:textColorHint="#703d38"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/passwordTxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_bg"
+                android:ems="10"
+                android:fontFamily="@font/od_regular"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="#703d38"
+                android:textColorHint="#703d38"
+                android:textSize="18dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/joinBtn"
+                style="@android:style/Widget.Button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:background="@drawable/button_bg"
+                android:fontFamily="@font/od_regular"
+                android:text="join"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/od_regular"
+                    android:text="Already on Journey? "
+                    android:textAlignment="center"
+                    android:textColor="#703d38"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/signTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/od_regular"
+                    android:text="sign in"
+                    android:textColor="#ffaf34"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

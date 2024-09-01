@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ChatGPT ChatApp</string>
+    <string name="journey">Journey</string>
+    <string name="test_bot">Test Bot</string>
+    <string name="testbot_image">Test Bot Image</string>
+    <string name="send_message_hint">Send a message to the Journey app</string>
+    <string name="send_message">Send Message</string>
+    <string name="enter_message">Please enter a message.</string>
+    <string name="error_parsing_response">Error parsing response: </string>
+    <string name="scrollview_content_description">Scrollable content</string> <!-- Add this line -->
+</resources>
